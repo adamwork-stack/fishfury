@@ -89,6 +89,19 @@ hgroup {
 #logo {
     height: 50px;
     width: auto;
+    max-width: 200px;
+}
+
+/* Logo text fallback */
+#logo-link {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+#logo-link:hover {
+    color: #667eea;
 }
 
 /* Main Content */
