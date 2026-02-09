@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Maven Pro', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #667eea url('background.jpg') center center / cover no-repeat fixed;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
