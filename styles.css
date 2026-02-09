@@ -1,0 +1,407 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Page Wrapper */
+#pagewrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+#header {
+    padding: 20px 0;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+}
+
+#sibox {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#sibox li {
+    display: inline-block;
+}
+
+#sibox li:first-child {
+    font-weight: 500;
+    color: #666;
+}
+
+#sibox a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#sibox a:hover {
+    color: #667eea;
+    background: #f0f0f0;
+}
+
+.si-fb::before {
+    content: "📘 ";
+}
+
+.si-tw::before {
+    content: "🐦 ";
+}
+
+hgroup {
+    float: left;
+}
+
+#logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Phone Frame */
+.phone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.phone-frame {
+    position: relative;
+    width: 320px;
+    height: 640px;
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(255, 255, 255, 0.1),
+        0 0 0 4px #333;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.phone-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 25px;
+    background: #1a1a1a;
+    border-radius: 0 0 15px 15px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Content Sections */
+.content-sections {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+#sidel, #sider {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sidel h2, #sider h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+#sidel p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.8;
+}
+
+#sider ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sider ul li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #555;
+    line-height: 1.8;
+    border-bottom: 1px solid #eee;
+}
+
+#sider ul li:last-child {
+    border-bottom: none;
+}
+
+#sider ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* App Store Link */
+.ctaarea {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.app-store-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-store-link:hover {
+    transform: translateY(-2px);
+}
+
+#ituneslink {
+    display: inline-block;
+    background: #000;
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.app-store-link:hover #ituneslink {
+    background: #333;
+}
+
+#ituneslink svg {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+#ituneslink::before {
+    content: "Download on the";
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+#ituneslink::after {
+    content: "App Store";
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#ituneslink svg {
+    display: none;
+}
+
+/* Footer */
+.container-bottom {
+    margin-top: 60px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer-inner {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #pagewrap {
+        padding: 10px;
+    }
+
+    #header {
+        padding: 15px 0;
+    }
+
+    #sibox {
+        float: none;
+        justify-content: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    hgroup {
+        float: none;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+        border-radius: 35px;
+        padding: 10px;
+    }
+
+    .phone-screen {
+        border-radius: 28px;
+    }
+
+    .phone-notch {
+        width: 100px;
+        height: 20px;
+    }
+
+    .content-sections {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    #sidel, #sider {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .phone-frame {
+        width: 240px;
+        height: 480px;
+        border-radius: 30px;
+        padding: 8px;
+    }
+
+    .phone-screen {
+        border-radius: 24px;
+    }
+
+    .phone-notch {
+        width: 80px;
+        height: 18px;
+    }
+
+    #sibox {
+        font-size: 0.9em;
+    }
+
+    #sibox li:first-child {
+        display: none;
+    }
+}
+
+/* Smooth Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.phone-container,
+#sidel,
+#sider {
+    animation: fadeIn 0.6s ease-out;
+}
+
+#sidel {
+    animation-delay: 0.2s;
+}
+
+#sider {
+    animation-delay: 0.4s;
+}
