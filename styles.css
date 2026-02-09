@@ -90,18 +90,12 @@ hgroup {
     height: 50px;
     width: auto;
     max-width: 200px;
+    display: block;
+    transition: opacity 0.3s ease;
 }
 
-/* Logo text fallback */
-#logo-link {
-    font-size: 28px;
-    font-weight: 700;
-    color: #333;
-    text-decoration: none;
-}
-
-#logo-link:hover {
-    color: #667eea;
+#logo-link:hover #logo {
+    opacity: 0.8;
 }
 
 /* Main Content */
